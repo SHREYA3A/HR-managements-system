@@ -1,0 +1,132 @@
+.homepage {
+  background-color: white;
+  color: white;
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+.o {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.form-container {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 40px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.form-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-group {
+  text-align: right;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.viewformargin {
+  margin-top: 16rem;
+  margin-left: 5rem;
+}
+
+.Logout {
+  border: none;
+  margin-left: 55rem;
+  border-radius: 50%;
+}
+.LogoutLink {
+  border: none;
+  border-radius: 50%;
+}
+/* table responsive  */
+@media only screen and (max-width: 768px) {
+  .table-responsive tbody,
+  .table-responsive tr,
+  .table-responsive td {
+    display: block;
+    text-align: left;
+    border: 1px solid black;
+  }
+  .table-responsive thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table-responsive td {
+    position: relative;
+    padding-left: 50%;
+  }
+  .table-responsive td::before {
+    content: attr(data-title);
+    position: absolute;
+    left: 6px;
+    font-weight: bold;
+  }
+}
